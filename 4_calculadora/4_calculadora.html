@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora Básica en JS</title>
+
+<!--Stilos  a  mis   botones-->
+<style>
+input[type=button],input[type="text"]{
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+	color: #FF00BF;
+}
+
+</style>
+
+	</head>
+<body>
+<!--llamo  a   mi  archivo  script-->
+<center>
+<script type="text/javascript" src="style.js"></script>
+
+<form name="fo">
+<!--Titulo  de mi  calculadora-->
+	<h1>Calculadora Básica en JS</h1>
+<!--creo  mi  tabla-->
+	<table>
+
+<tr>
+		<td colspan="5"><input type="text" name="valores" id="valores" onkeypress="return solonumeros(event)"></td>
+</tr>
+<!--Creo mi   primera  fila-->
+<tr>
+	<td><input type="button" value="7" onClick="retornar(value)"></td>
+	<td><input type="button" value="8" onClick="retornar(value)"></td>
+	<td><input type="button" value="9" onClick="retornar(value)"></td>
+	<td><input type="button" value="+" onClick="comprobar(value)"></td>
+	<td><input type="button" value="-" onClick="comprobar(value)"></td>
+</tr>
+<!--Creo mi  segunda fila-->
+<tr>
+	<td><input type="button" value="4" onClick="retornar(value)"></td>
+	<td><input type="button" value="5" onClick="retornar(value)"></td>
+	<td><input type="button" value="6" onClick="retornar(value)"></td>
+	<td><input type="button" value="*" onClick="comprobar(value)"></td>
+	<td><input type="button" value="/" onClick="comprobar(value)"></td>
+</tr>
+<!--Creo mi   tercera  fila-->
+<tr>
+	<td><input type="button" value="1" onClick="retornar(value)"></td>
+	<td><input type="button" value="2" onClick="retornar(value)"></td>
+	<td><input type="button" value="3" onClick="retornar(value)"></td>
+	<td><input type="button" value="<-" onClick="eliminar()"></td>
+	<td><input type="button" value="C" onClick="eliminar_todo()"></td>
+</tr>
+
+<tr>
+	<td colspan="2"><input type="button" value="0" onClick="retornar(value)"></td>
+	<td></td>
+	<td colspan="2"><input type="button" value="=" onClick="calcular()"></td>
+</tr>
+	</table>
+</form>
+<br><br><br>
+<h3>Vannessa Ramirez Rubio - Electiva Profesional III</h3>
+<h3>Decimo Semestre</h3>
+</center>
+</body>
+</html>

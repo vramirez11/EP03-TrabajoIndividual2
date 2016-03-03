@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title></title>
+  <script type="text/javascript">
+
+  function peso_efec(){
+
+    peso= document.f1.num1.value;
+    peso_luna=document.f1.resul.value;
+    peso_luna = (parseInt(peso) * 1.62);
+    document.f1.resul.value=peso_luna;
+
+    }
+  </script>
+</head>
+<body>
+  <center><h1>¿Cuál es su peso efectivo en la Luna? </h1>
+  <form name='f1' action="peso_efectivo.html" method=POST>
+  <br><br><br>
+  <label name=lblnum1>Digite su Peso en Kg: </label><input type=text name='num1'/>
+  <input type=button value="   =   " onclick="peso_efec()">
+  <p><label name=lblresul>Su peso en Newton en la Luna es: </label><input type=text name='resul'/>
+  </form>
+  <br><br><br>
+  <h3>Vannessa Ramirez Rubio - Electiva Profesional III</h3>
+  <h3>Decimo Semestre</h3>
+</center>
+</body>
+</html>
